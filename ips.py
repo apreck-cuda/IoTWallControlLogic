@@ -2,9 +2,9 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 def main():
-    url = "http://10.10.10.114:8080/rest/firewall/v1/forwarding-firewall/rules/dynamic/"  # Replace with your URL
-    username = "api"
-    password = "Demo-123"
+    url = "http://localhost:8080/rest/firewall/v1/forwarding-firewall/rules/dynamic/"  # Replace with your URL
+    username = "<username>"
+    password = "<password>"
 
     response = requests.get(url, auth=HTTPBasicAuth(username, password))
 
